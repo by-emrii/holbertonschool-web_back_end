@@ -39,7 +39,9 @@ function countStudents(path) {
 
   // loop through each field in fields obj
   for (const field in fields) {
-    console.log(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
+    if (fields[field]) {
+      console.log(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
+    }
   }
 }
 
