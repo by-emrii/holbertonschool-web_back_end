@@ -9,7 +9,8 @@ class StudentsController {
         response.write('This is the list of our students\n');
 
         // sort fields alphabetically (case sensitive)
-        const sortedFields = Object.keys(fields).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+        const sortedFields = Object.keys(fields).sort((a, b) => a.toLowerCase()
+          .localeCompare(b.toLowerCase()));
 
         // write each field student data
         sortedFields.forEach((field) => {
